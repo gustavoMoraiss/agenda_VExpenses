@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".activitys.CadastroContatoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activitys.CadastroContatoActivity">
+
+        <TextView
+            android:id="@+id/sub_titulo_dados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorBlueLight"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="@string/dados_cadastrais"
+            android:textColor="#f9f9f9"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_nome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp"
+            android:text="@string/text_nome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sub_titulo_dados" />
+
+        <EditText
+            android:id="@+id/edit_nome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_nome" />
+
+        <TextView
+            android:id="@+id/text_celular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/text_celular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_nome" />
+
+        <TextView
+            android:id="@+id/text_celular_residencial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp"
+            android:text="@string/text_celular_residencial"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/edit_telefone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/edit_telefone_residencial" />
+
+        <TextView
+            android:id="@+id/text_celular_comercial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp"
+            android:text="@string/text_celular_comercial"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/edit_telefone_residencial"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/edit_telefone_comercial" />
+
+        <EditText
+            android:id="@+id/edit_telefone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_celular" />
+
+        <EditText
+            android:id="@+id/edit_telefone_residencial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="11"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_telefone" />
+
+        <EditText
+            android:id="@+id/edit_telefone_comercial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="11"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_telefone_residencial" />
+
+        <Button
+            android:id="@+id/add_telefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_add"
+            android:text="@string/add_tel"
+            app:layout_constraintEnd_toStartOf="@+id/remove_telefone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_telefone_comercial" />
+
+        <Button
+            android:id="@+id/remove_telefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_add"
+            android:text="@string/remover_telefone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/add_telefone"
+            app:layout_constraintTop_toBottomOf="@+id/edit_telefone_comercial" />
+
+        <TextView
+            android:id="@+id/sub_titulo_endereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorBlueLight"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="@string/sub_endereco"
+            android:textColor="#f9f9f9"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/add_telefone" />
+
+        <LinearLayout
+            android:id="@+id/ll_cep"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/sub_titulo_endereco">
+
+
+            <EditText
+                android:id="@+id/edit_cep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:hint="@string/hint_cep"
+                android:inputType="number"
+                android:maxLength="8" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_rua_complemento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/ll_cep">
+
+
+            <EditText
+                android:id="@+id/edit_rua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint="@string/hint_rua"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/edit_complemento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="@string/hint_complemento"
+                android:maxLength="8" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_bairro_numero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/ll_rua_complemento">
+
+
+            <EditText
+                android:id="@+id/edit_bairro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/hint_bairro"
+                android:inputType="text"
+                android:maxLength="40" />
+
+            <EditText
+                android:id="@+id/edit_numero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="@string/hint_numero"
+                android:inputType="number"
+                android:maxLength="6" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_cidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/ll_bairro_numero">
+
+
+            <EditText
+                android:id="@+id/edit_cidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="@string/hint_cidade"
+                android:inputType="text"
+                android:maxLength="40" />
+
+
+            <Spinner
+                android:id="@+id/sp_estado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sub_titulo_endereco_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorBlueLight"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="@string/segundo_endereco"
+            android:textColor="#f9f9f9"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/ll_cidade" />
+
+        <LinearLayout
+            android:id="@+id/ll_cep_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/sub_titulo_endereco_2">
+
+
+            <EditText
+                android:id="@+id/edit_cep_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:hint="@string/hint_cep"
+                android:inputType="number"
+                android:maxLength="8" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_rua_complemento_2"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/ll_cep_2">
+
+
+            <EditText
+                android:id="@+id/edit_rua_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint="@string/hint_rua"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/edit_complemento_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="@string/hint_complemento"
+                android:maxLength="8" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_bairro_numero_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/ll_rua_complemento_2">
+
+
+            <EditText
+                android:id="@+id/edit_bairro_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/hint_bairro"
+                android:inputType="text"
+                android:maxLength="40" />
+
+            <EditText
+                android:id="@+id/edit_numero_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="@string/hint_numero"
+                android:inputType="number"
+                android:maxLength="6" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_cidade_2"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/ll_bairro_numero_2">
+
+
+            <EditText
+                android:id="@+id/edit_cidade_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="@string/hint_cidade"
+                android:inputType="text"
+                android:maxLength="40" />
+
+
+            <Spinner
+                android:id="@+id/sp_estado_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/add_endereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_add"
+            android:text="@string/add_tel"
+            app:layout_constraintEnd_toStartOf="@+id/remove_endereco"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_cidade_2" />
+
+        <Button
+            android:id="@+id/remove_endereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_add"
+            android:text="@string/remover_telefone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/add_endereco"
+            app:layout_constraintTop_toBottomOf="@+id/ll_cidade_2" />
+
+
+
+
+
+
+        <Button
+            android:id="@+id/btn_salvar"
+            android:layout_width="0dp"
+            android:background="@drawable/btn_add"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/salvar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/remove_endereco" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

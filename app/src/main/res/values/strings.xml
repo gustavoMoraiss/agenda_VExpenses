@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">agenda - VExpenses</string>
+    <string name="txtEmail">E-MAIL</string>
+    <string name="hintEmail">Digite o seu E-mail.</string>
+    <string name="txtSenha">SENHA</string>
+    <string name="hintSenha">Digite sua senha.</string>
+    <string name="login">LOGIN</string>
+    <string name="cadastro">Não possuí conta? Cadastre-se já!</string>
+    <string name="Confirmar_Cadastro">Confirmar Cadastro</string>
+    <string name="confirme_sua_senha">Confirme sua senha.</string>
+    <string name="confirme_seu_e_mail">Confirme seu E-mail.</string>
+    <string name="bt_atualizar">Atualizar</string>
+    <string name="contato_criado_sucesso">Contato criado com sucesso!</string>
+    <string name="contato_atualizado_sucesso">Contato atualizado com sucesso!</string>
+    <string name="tel_celular">Celular:</string>
+    <string name="tel_comercial">Comercial:</string>
+    <string name="tel_residencial">Residencial:</string>
+    <string name="message_campo_obrigatorio">este campo é obrigatório!</string>
+    <string name="message_email_difference">Email deve ser igual ao mencionado acima.</string>
+    <string name="message_password_difference">Senha digitada não confere.</string>
+    <string name="login_realizado_sucesso">Login realizado com sucesso!</string>
+
+    <!-- Menu principal -->
+    <string name="menu_sair">Sair</string>
+    <string name="menu_pesquisar">Pesquisar</string>
+    <string name="menu_cadastrar">Cadastrar</string>
+    <string name="dados_cadastrais">Dados Cadastrais</string>
+    <string name="text_nome">Nome</string>
+    <string name="text_celular">Celular</string>
+    <string name="text_celular_residencial">Residencial</string>
+    <string name="text_celular_comercial">Comercial</string>
+    <string name="add_tel">Adicionar</string>
+    <string name="remover_telefone">remover</string>
+    <string name="sub_endereco">Endereço</string>
+    <string name="hint_cep">*CEP</string>
+    <string name="hint_rua">*Rua</string>
+    <string name="hint_complemento">*Complemento</string>
+    <string name="hint_bairro">*Bairro</string>
+    <string name="hint_numero">*Nº</string>
+    <string name="hint_cidade">*Cidade</string>
+    <string name="segundo_endereco">Segundo Endereço</string>
+    <string name="salvar">Salvar</string>
+    <string name="email_ja_cadastrado">Email ja cadastrado em nosso sistema</string>
+
+
+    <string-array name="states">
+        <item>"*Estado"</item>
+        <item>"Acre (AC)"</item>
+        <item>"Alagoas (AL)"</item>
+        <item>"Amapá (AP)"</item>
+        <item>"Amazonas (AM)"</item>
+        <item>"Bahia (BA)"</item>
+        <item>"Ceará (CE)"</item>
+        <item>"Distrito Federal (DF)"</item>
+        <item>"Espírito Santo (ES)"</item>
+        <item>"Goiás (GO)"</item>
+        <item>"Maranhão (MA)"</item>
+        <item>"Mato Grosso (MT)"</item>
+        <item>"Mato Grosso do Sul (MS)"</item>
+        <item>"Minas Gerais (MG)"</item>
+        <item>"Pará (PA)"</item>
+        <item>"Paraíba (PB)"</item>
+        <item>"Paraná (PR)"</item>
+        <item>"Pernambuco (PE)"</item>
+        <item>"Piauí (PI)"</item>
+        <item>"Rio de Janeiro (RJ)"</item>
+        <item>"Rio Grande do Norte (RN)"</item>
+        <item>"Rio Grande do Sul (RS)"</item>
+        <item>"Rondônia (RO)"</item>
+        <item>"Roraima (RR)"</item>
+        <item>"Santa Catarina (SC)"</item>
+        <item>"São Paulo (SP)"</item>
+        <item>"Sergipe (SE)"</item>
+        <item>"Tocantins (TO)"</item>
+    </string-array>
+</resources>
